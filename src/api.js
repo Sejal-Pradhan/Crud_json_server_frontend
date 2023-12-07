@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:3500/products";
+const url = "https://crud-operations-us-api.onrender.com/products";
 
 export async function getData() {
   return await axios.get(`${url}`);
