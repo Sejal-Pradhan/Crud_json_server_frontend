@@ -1,0 +1,117 @@
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.form-overlay form {
+    width: 500px;
+    background-color: rgba(255, 255, 255, .67) !important;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form button {
+    margin: 20px 5px;
+    padding: 5px;
+    width: 80px;
+}
+
+input{
+    text-transform: capitalize;
+}
+
+.table{
+    --bs-table-bg: rgba(255, 255, 255, .5) !important;
+}
+
+.title {
+    color: blueviolet;
+    font-size: 40px;
+}
+
+th {
+    font-size: 21px;
+    color: green !important;
+}
+
+th,td{
+    text-transform: capitalize;
+}
+
+.add {
+    margin-bottom: 10px;
+    background-color: rgb(255, 217, 0);
+    border: none;
+}
+
+.add:hover {
+    background-color: rgb(255, 191, 0);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
